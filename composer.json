@@ -1,0 +1,37 @@
+{
+    "name": "chicorycom/laravel-dompdf",
+    "description": "your System and Security Network Integrator",
+    "license": "MIT",
+	"keywords": ["laravel", "dompdf", "pdf"],
+    "authors": [
+        {
+            "name": "Assane Sarr",
+            "email": "contact@chicorycom.net"
+        }
+    ],
+	"require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+        "dompdf/dompdf": "^0.8"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Chicorycom\\DomPDF\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Chicorycom\\DomPDF\\ServiceProvider"
+            ],
+            "aliases": {
+                "PDF": "Chicorycom\\DomPDF\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
