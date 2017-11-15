@@ -4,7 +4,7 @@
 
 Exigez ce paquet dans votre composer.json et mettez à jour le compositeur. Cela va télécharger le paquet et les bibliothèques dompdf + font lib aussi.
 
-    composer require barryvdh/laravel-dompdf
+    composer require Chicorycom/laravel-dompdf:dev-master
 
 ## Installation
 
@@ -12,11 +12,11 @@ Exigez ce paquet dans votre composer.json et mettez à jour le compositeur. Cela
 
 Après la mise à jour de composer, ajoutez le fournisseur de services au tableau des fournisseurs dans config/app.php
 
-    Barryvdh\DomPDF\ServiceProvider::class,
+    Chicorycom\DomPDF\ServiceProvider::class,
 
 Vous pouvez éventuellement utiliser la façade pour un code plus court. Ajoutez ceci à vos façades:
 
-    'PDF' => Barryvdh\DomPDF\Facade::class,
+    'PDF' => Chicorycom\DomPDF\Facade::class,
 
 ### Lumen:
 
